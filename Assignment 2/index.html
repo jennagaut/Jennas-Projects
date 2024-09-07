@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Jenna Gauthier">
+        <meta name="description" content="a magic 8 ball that tells you you're fortune">
+        <link rel="stylesheet" href="css/style.css">
+        <script defer src="js/script.js"> </script>
+        <title>Discover Your Fortune</title>
+    </head>
+    <body>
+
+        <div class="initials">
+            JG
+        </div>
+
+        <div class="header">
+            <div>
+                <h1> welcome. </h1>
+            </div>
+            <div>
+                <h2> are you ready to see your future? </h2>
+            </div>
+        </div>
+    
+        <div class="choices">
+            <div id="yes">
+                <button class="options"> <a href=#text> YES! </a> </button>
+            </div>
+        </div>
+
+        <div id="main">
+           <div class="mainText">
+                this is the magic 8 ball. the magic 8 ball knows everything about your future.
+           </div>
+           <div class="mainText" id="text">
+                ask any yes or no question, and click to reveal the answer!
+           </div>
+
+           <div class="ball">
+                <div class="circle">
+                
+                </div>
+
+                <div class="ballDetails">
+                </div>
+
+                <div class="number">
+                    8
+                </div> 
+            </div>
+
+            <div class="answer">
+            </div>
+
+            <div class="box">
+                <label for="Question" id="question">Question:</label>
+                <input type="text" id="textBox">
+
+                <button id="ask"> Ask! </button>
+            </div>
+
+            <button class="reset"> RESET </button>
+
+        </div>
+    </body>
+</html>
