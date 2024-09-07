@@ -1,0 +1,312 @@
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz@9..144&display=swap');
+@import url("https://use.typekit.net/oqo8sje.css");
+
+html {
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+    color:  #CE8019;;
+}
+
+.factsButton a {
+    color: #F1E7D5;
+}
+
+#signupButton a {
+    color: #F1E7D5;
+}
+
+.clickMe a {
+    color: #F1E7D5;
+}
+
+#signupButton a:hover {
+    color:  #384E34;
+    transition: .5s all ease;
+}
+
+a:hover {
+    color:  #384E34;
+    transition: .5s all ease;
+}
+
+.body {
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: #F1E7D5;
+}
+
+#welcome {
+    font-family: "lust-script", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 35px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.introduction {
+    display: flex;
+    justify-content: center;
+    background-color: #CE8019;
+    color: #F1E7D5;
+    padding: 20px;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 20px;
+    color: #384E34;
+    background-color: #F1E7D5;
+    height: 40px;
+}
+
+.navBar {
+    font-family: 'Fraunces', serif;
+    font-weight: 400;
+}
+
+#myName {
+    font-family: "lust-script", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 36px;
+    align-items: center;
+    color: #CE8019;
+}
+
+#header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: "edita", serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    padding: 80px;
+    background-color: #384E34;
+    color: #F1E7D5;
+    line-height: 20px;
+    height: 300px;
+}
+
+#headerText {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 45px;
+    color: #F1E7D5;
+}
+
+.clickMe {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.headerButton {
+    background-color: #CE8019;;
+    color: white;
+    font-family: 'Fraunces', serif;
+    padding: 10px;
+    border: 1px solid #CE8019;;
+    border-radius: 15px;
+    margin-top: 50px;
+}
+
+#aboutButton {
+    background-color: #CE8019;;
+    color: white;
+    font-family: 'Fraunces', serif;
+    padding: 10px;
+    border: 1px solid #CE8019;;
+    border-radius: 15px;
+    margin-top: 50px;
+}
+
+#about {
+    display: flex;
+    padding: 20px;
+    margin-bottom: 80px;
+    margin-top: 80px;
+    gap: 50px;
+}
+
+.aboutMe {
+    display: flex;
+    flex-grow: 1;
+    justify-content: flex-end;
+    text-align: end;
+    font-family: "lust-script", sans-serif;
+    font-size: 70px;
+    color: #CE8019;
+}
+
+.aboutText {
+    display: flex;
+    flex-grow: 1;
+    font-family: 'Fraunces', serif;
+    line-height: 30px;
+    align-items: center;
+    color: #452903;
+}
+
+#interests {
+    display: flex;
+    padding: 50px;
+    gap: 50px;
+    background-color: #384E34;
+    flex-direction: column;
+}
+
+.interestsTitle {
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+    font-family: "lust-script", sans-serif;
+    font-size: 70px;
+    color: #F1E7D5;
+}
+
+.interestsText {
+    display: flex;
+    flex-grow: 1;
+    font-family:'Fraunces', serif;
+    justify-content: space-around;
+    line-height: 30px;
+    align-items: center;
+    color: #F1E7D5;
+    gap: 50px;
+}
+
+.icons {
+    width: 75px;
+    height: 75px;
+}
+
+.interestsPara {
+   text-align: center;
+   margin-bottom: 50px;
+}
+
+#health {
+    margin-top: -20px;
+}
+
+#fun {
+    display: flex;
+    flex-grow: 1;
+    background-color: #F1E7D5;
+    align-items: center;
+    padding: 50px;
+    gap: 50px;
+}
+
+.funTitle {
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    justify-content: end;
+    text-align: end;
+    padding: 20px;
+    font-family: "lust-script", sans-serif;
+    font-size: 70px;
+    color: #CE8019;
+}
+
+.funFacts {
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    font-family: 'Fraunces', serif;
+    line-height: 30px;
+    color: #452903;
+}
+
+.footer {
+    display: flex;
+    background-color: #D5827E;
+    color: #F1E7D5;
+    height: 100px;
+    padding: 50px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.footerBox {
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'sofia', script;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.signupBox {
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+    align-items: center;
+}
+
+#friends {
+    font-size: 30px;
+    font-family: "lust-script", sans-serif;
+}
+
+#signupButton {
+    font-family:'Fraunces', serif;
+    background-color: #CE8019;;
+    color: white;
+    padding: 8px;
+    border: 1px solid #CE8019;;
+    border-radius: 15px;
+    margin-top: 30px;
+}
+
+#signup {
+    font-family:'Fraunces', serif;
+    background-color: #F1E7D5;
+    border: 1px solid #F1E7D5;
+    color: #452903;
+    border-radius: 15px;
+    padding: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+#extraFact {
+    display: flex;
+    flex-grow: 1;
+    background-color:  #F1E7D5;
+    justify-content: center;
+    align-items: center;
+}
+
+.factsButton {
+    background-color: #CE8019;;
+    color: white;
+    font-family: 'Fraunces', serif;
+    padding: 10px;
+    border: 1px solid #CE8019;;
+    border-radius: 15px;
+    margin-bottom: 40px;
+    margin-top: -30px;
+}
