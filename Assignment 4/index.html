@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Assignment 4 </title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+<body>
+
+    <main>
+        <div class="title">
+        </div>
+
+        <div id="weather">
+        </div>
+    </main>
+    
+</body>
+<script>
+    $(document).ready(function(){
+        $.ajax({
+            url: 'https://api.openweathermap.org/data/2.5/weather?q=Toronto,ca&appid=4fb72ccb57b9b1939382dbb6ee1d515e&units=metric&mode=xml',
+            dataType: 'xml',
+            success: function(data){
+
+                var $xml = $(data);
+                var city = $xml.find('city').attr('name');
+                var icon = $xml.find('weather').attr('icon');
+                var temperature = $xml.find('temperature').attr('value');
+                var descript = $xml.find('weather').attr('value');
+                var feelsLike = $xml.find('feels_like').attr('value');
+                var humidity = $xml.find('humidity').attr('value');
+                var clouds = $xml.find('clouds').attr('value');
+                var lastUpdate = $xml.find('lastupdate').attr('value')
+                var precipitation = $xml.find('precipitation').attr('value');
+                var wind = $xml.find('wind').attr('value');
+                
+                var weatherInfo = ""
+                weatherInfo += '<div class="title">' + city + '</div>';
+                weatherInfo += '<img src="http://openweathermap.org/img/wn/' + icon + '.png" alt="weather icons">';
+                weatherInfo += '<div id="temp">' + temperature + '°C</div>';
+                weatherInfo += '<div class="box"> <div id="feelsLike"> Feels like ' + feelsLike + "°C</div>";
+                weatherInfo += '<div id="descript">' + descript + '</div>';
+                weatherInfo += '<div id="humid"> Humidity: ' + humidity + "%</div>";
+
+                if (precipitation !== undefined){
+                    weatherInfo += '<div id="rain">It is raining: ' + precipitation + "mm</div>";
+                } else {
+                    weatherInfo += "";
+                }
+
+                if (clouds !== "0" || undefined){
+                    weatherInfo += '<div id="clouds">' + clouds + "% cloudy </div>";
+                } else {
+                    weatherInfo += "";
+                }
+
+                if (wind !== undefined){
+                    weatherInfo += '<div id="wind">Wind speed: ' + wind + " km/h</div>";
+                } else {
+                    weatherInfo += "";
+                }
+
+                weatherInfo += '<div id="lastUpdate">This information was last updated at <br>' + lastUpdate + "</div></div>";
+
+                $('#weather').html(weatherInfo);
+
+            }
+        });
+    });
+
+</script>
+</html>
