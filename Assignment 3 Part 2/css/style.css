@@ -1,0 +1,128 @@
+@import url("https://use.typekit.net/wvv1twn.css");
+@import url("https://use.typekit.net/wvv1twn.css");
+
+html {
+    margin-top: 20px;
+    background-color: #527EB3;
+    font-family: "bely", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #FFFCF0;
+    font-size: 1.2em;
+}
+
+body {
+    margin: 0;
+}
+
+#title {
+    font-size: 1.8em;
+    font-family: "salted", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin: 20px;
+    color: #F4D35E;
+    transition: 2s all ease;
+}
+
+.instructions {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+canvas {
+    border: 3px solid #FFEEDF;
+    border-bottom: 20px solid #FFEEDF;
+    border-top: 50px solid #FFEEDF;
+    background-color: #0d3b6658;
+}
+
+.facts {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+}
+
+#button {
+    background-color: #E26F50;
+    position: relative;
+    color: white;
+    border-radius: 10px;
+    border: 1px solid #E26F50;
+    padding: 10px 20px;
+    font-family: "bely", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: .90em;
+    cursor: pointer;
+}
+
+#button:hover {
+    background-color: #FD9846;
+    border-color: #FD9846;
+}
+
+#catch {
+    background-color: #E26F50;
+    color: white;
+    border-radius: 10px;
+    border: 1px solid #E26F50;
+    padding: 10px 20px;
+    font-family: "bely", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: .90em;
+    cursor: pointer;
+    margin-top: 30px;
+}
+
+/*
+#release {
+    background-color: #E26F50;
+    color: white;
+    border-radius: 10px;
+    border: 1px solid #E26F50;
+    padding: 10px 20px;
+    font-family: "bely", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: .90em;
+    cursor: pointer;
+    margin-top: 30px;
+}
+*/
+
+#catchCount {
+    margin-top: 20px;
+    margin-bottom: 60px;
+    font-size: 1.5em;
+}
+
+#catch:hover {
+    background-color: #FD9846;
+    border-color: #FD9846;
+}
+
+#information {
+    position: relative;
+    margin-top: 20px;
+    margin-bottom: 60px;
+    color: #FFEEDF;
+    padding: 20px;
+    border-radius: 3px;
+    font-size: 1.5em;
+}
+
+.flexBox {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
